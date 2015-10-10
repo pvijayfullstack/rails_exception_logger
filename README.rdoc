@@ -10,9 +10,6 @@ Inside your Gemfile:
   # Rails 4.1.x
   gem "rails_exception_logger", :github => "pvijayror/rails_exception_logger"
 
-  # Rails 4.0.x
-  gem "rails_exception_logger", :github => "pvijayror/rails_rails_exception_logger", tag: 'v0.1.0'
-
 and then run:
 
   bundle install
@@ -58,7 +55,7 @@ Example uses the declarative_authorization gem
 in config/environment/production.rb:
 
   config.after_initialize do
-    RailsRailsExceptionLogger::LoggedExceptionsController.class_eval do
+    RailsExceptionLogger::LoggedExceptionsController.class_eval do
       # include any custom auth modules you need
       # (declarative authorization gem used)
       filter_resource_access
@@ -115,7 +112,7 @@ To add authentication, in config/application.rb or the specific environment file
 
   # set up authencation of rails_exception_logger
   config.after_initialize do
-    RailsRailsExceptionLogger::LoggedExceptionsController.class_eval do
+    RailsExceptionLogger::LoggedExceptionsController.class_eval do
       before_filter :authorize
 
       protected
