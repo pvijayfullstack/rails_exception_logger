@@ -7,9 +7,9 @@ require "rails_exception_logger/version"
 Gem::Specification.new do |s|
   s.name        = "rails_exception_logger"
   s.version     = RailsExceptionLogger::VERSION
-  s.authors     = ["Ryan Cheung"]
-  s.email       = ["ryancheung.go@gmail.com"]
-  s.homepage    = "https://github.com/ryancheung/rails_exception_logger"
+  s.authors     = ["vijay p"]
+  s.email       = ["pvijay127@gmail.com"]
+  s.homepage    = "https://github.com/pvijayror/rails_exception_logger"
   s.summary     = "Log exceptions inside a database table. No avaliable with rails 3.2.x."
   s.description = "It's evolved from the outdated version 0.11.1 and built with rails engine and is mountable."
 
