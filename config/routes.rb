@@ -1,6 +1,6 @@
 RailsExceptionLogger::Engine.routes.draw do
   # Exception Logger
-  resources :rails_logged_exceptions do
+  resources :logged_exceptions do
     collection do
       post :clear
       post :query

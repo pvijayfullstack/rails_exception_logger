@@ -1,6 +1,6 @@
 class CreateRailsExceptionLoggerLoggedExceptions < ActiveRecord::Migration
   def change
-    create_table :rails_logged_exceptions, :force => true do |t|
+    create_table :logged_exceptions, :force => true do |t|
       t.string :exception_class
       t.string :controller_name
       t.string :action_name

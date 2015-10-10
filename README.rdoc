@@ -31,7 +31,7 @@ Please check if all those requirements are satisfied on your environment.
 
 === Inside your config/routes.rb
 
-  mount RailsRailsExceptionLogger::Engine => "/rails_exception_logger"
+  mount RailsExceptionLogger::Engine => "/rails_exception_logger"
 
 === Database Setup
 
